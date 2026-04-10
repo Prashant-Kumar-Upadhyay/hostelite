@@ -60,7 +60,7 @@ npm start
 ![Home](./screenshots/home.png)
 
 ### 🏢 PG Details
-![PG](./screenshots/pg.png)
+![PG](./screenshots/mypg.png)
 
 ### 👑 Owner Dashboard
 ![Owner](./screenshots/owner.png)
