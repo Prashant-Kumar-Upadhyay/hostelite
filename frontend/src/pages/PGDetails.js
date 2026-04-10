@@ -13,7 +13,7 @@ function PGDetails() {
   const fetchPG = async () => {
     try {
       const res = await axios.get(
-        "http://localhost:5000/api/pgs/search?city=Bengaluru"
+        " https://hostelite-backend.onrender.com/api/pgs/search?city=Bengaluru"
       );
 
       const found = res.data.pgs.find((p) => p._id === id);
@@ -29,7 +29,7 @@ function PGDetails() {
     const token = localStorage.getItem("token");
 
     await axios.post(
-      `http://localhost:5000/api/pgs/${id}/apply`,
+      ` https://hostelite-backend.onrender.com/api/pgs/${id}/apply`,
       { message: "I want to join this PG" },
       {
         headers: {

@@ -13,7 +13,7 @@ function StudentDashboard() {
       const token = localStorage.getItem("token");
 
       const res = await axios.get(
-        "http://localhost:5000/api/pgs/my",
+        " https://hostelite-backend.onrender.com/api/pgs/my",
         {
           headers: {
             Authorization: `Bearer ${token}`,

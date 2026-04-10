@@ -13,7 +13,7 @@ function AdminDashboard() {
       const token = localStorage.getItem("token");
 
       const res = await axios.get(
-        "http://localhost:5000/api/admin/pgs/pending",
+        " https://hostelite-backend.onrender.com/api/admin/pgs/pending",
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -33,7 +33,7 @@ function AdminDashboard() {
       const token = localStorage.getItem("token");
 
       await axios.post(
-        `http://localhost:5000/api/admin/pgs/${id}/approve`,
+        ` https://hostelite-backend.onrender.com/api/admin/pgs/${id}/approve`,
         {},
         {
           headers: {

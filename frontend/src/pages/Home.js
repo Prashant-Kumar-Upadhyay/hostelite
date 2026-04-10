@@ -28,7 +28,7 @@ function Home() {
   const fetchPGs = async () => {
     try {
       const res = await axios.get(
-        "http://localhost:5000/api/pgs/recommended?city=Bengaluru"
+        " https://hostelite-backend.onrender.com/api/pgs/recommended?city=Bengaluru"
       );
       setPgs(res.data.recommended);
     } catch (err) {
@@ -39,7 +39,7 @@ function Home() {
   const fetchPopular = async () => {
     try {
       const res = await axios.get(
-        "http://localhost:5000/api/pgs/popular"
+        " https://hostelite-backend.onrender.com/api/pgs/popular"
       );
       setPopular(res.data.popular);
     } catch (err) {
@@ -51,7 +51,7 @@ function Home() {
   const handleSearch = async () => {
     try {
       const res = await axios.get(
-        `http://localhost:5000/api/pgs/search?city=Bengaluru&keyword=${keyword}`
+        ` https://hostelite-backend.onrender.com/api/pgs/search?city=Bengaluru&keyword=${keyword}`
       );
       setPgs(res.data.pgs);
     } catch (err) {

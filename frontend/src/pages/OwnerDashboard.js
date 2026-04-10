@@ -21,7 +21,7 @@ useEffect(() => {
       const token = localStorage.getItem("token");
 
       const res = await axios.get(
-        `http://localhost:5000/api/owner/requests`,
+        ` https://hostelite-backend.onrender.com/api/owner/requests`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -40,7 +40,7 @@ useEffect(() => {
     const token = localStorage.getItem("token");
 
     const res = await axios.get(
-      "http://localhost:5000/api/owner/pgs",
+      " https://hostelite-backend.onrender.com/api/owner/pgs",
       {
         headers: {
           Authorization: `Bearer ${token}`,
@@ -59,7 +59,7 @@ useEffect(() => {
     const token = localStorage.getItem("token");
 
     await axios.post(
-      "http://localhost:5000/api/owner/pgs",
+      " https://hostelite-backend.onrender.com/api/owner/pgs",
       { name, address, city, capacity, inviteCode },
       {
         headers: {
@@ -81,7 +81,7 @@ const handleDelete = async (id) => {
     const token = localStorage.getItem("token");
 
     await axios.delete(
-      `http://localhost:5000/api/owner/pgs/${id}`,
+      ` https://hostelite-backend.onrender.com/api/owner/pgs/${id}`,
       {
         headers: {
           Authorization: `Bearer ${token}`,
@@ -103,7 +103,7 @@ const handleDelete = async (id) => {
       const token = localStorage.getItem("token");
 
       await axios.post(
-        `http://localhost:5000/api/owner/requests/${id}/approve`,
+        ` https://hostelite-backend.onrender.com/api/owner/requests/${id}/approve`,
         {},
         {
           headers: {

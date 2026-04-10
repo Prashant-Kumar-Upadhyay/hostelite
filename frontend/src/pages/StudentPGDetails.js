@@ -18,7 +18,7 @@ function StudentPGDetails() {
       const token = localStorage.getItem("token");
 
       const res = await axios.get(
-        `http://localhost:5000/api/pgs/${pgId}/dashboard`,
+        ` https://hostelite-backend.onrender.com/api/pgs/${pgId}/dashboard`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -44,7 +44,7 @@ function StudentPGDetails() {
     formData.append("proof", file);
 
     await axios.post(
-      "http://localhost:5000/api/payments",
+      " https://hostelite-backend.onrender.com/api/payments",
       formData,
       {
         headers: {
@@ -67,7 +67,7 @@ function StudentPGDetails() {
     const token = localStorage.getItem("token");
 
     await axios.post(
-      "http://localhost:5000/api/complaints",
+      " https://hostelite-backend.onrender.com/api/complaints",
       {
         pgId,
         title: "Sample issue",

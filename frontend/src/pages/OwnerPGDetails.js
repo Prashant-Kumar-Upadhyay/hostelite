@@ -15,7 +15,7 @@ function OwnerPGDetails() {
       const token = localStorage.getItem("token");
 
       const res = await axios.get(
-        `http://localhost:5000/api/owner/pgs/${pgId}/dashboard`,
+        ` https://hostelite-backend.onrender.com/api/owner/pgs/${pgId}/dashboard`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -34,7 +34,7 @@ function OwnerPGDetails() {
       const token = localStorage.getItem("token");
 
       await axios.post(
-        `http://localhost:5000/api/payments/${id}/confirm`,
+        ` https://hostelite-backend.onrender.com/api/payments/${id}/confirm`,
         {},
         {
           headers: {
