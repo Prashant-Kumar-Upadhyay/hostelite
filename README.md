@@ -53,6 +53,21 @@ npm start
 
 ---
 
+
+## 📸 Screenshots
+
+### 🏠 Home
+![Home](./screenshots/home.png)
+
+### 🏢 PG Details
+![PG](./screenshots/pg.png)
+
+### 👑 Owner Dashboard
+![Owner](./screenshots/owner.png)
+
+### 🛡️ Admin Dashboard
+![Admin](./screenshots/admin.png)
+
 👨‍💻 Author
 
 Prashant Kumar Upadhyay
