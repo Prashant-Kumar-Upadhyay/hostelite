@@ -4,6 +4,10 @@ A full-stack PG/Hostel Management System built using MERN stack.
 
 ---
 
+## 🌐 Live Demo
+
+🔗 [Click here to view the live project](https://hostelite-beta.vercel.app/login)
+
 🚀 Features
 
 👨‍🎓 Student
